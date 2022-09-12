@@ -42,7 +42,6 @@ fi
 }
 # Stupidity checks }}}
 
-
 #
 # {{{ Carelessness checks
 {
@@ -137,6 +136,8 @@ fi
 # Extraction }}}
 
 # Cleanup and exit
+
+printinfo 'Files extracted. Flushing to the device and unmounting..'
 
 umount $PART1
 umount $PART2
