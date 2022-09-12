@@ -74,7 +74,7 @@ fi
     printinfo "Partitioning $DEVICE.."
     ( # create 1G part for boot, rest for install files
         sgdisk -Z "$DEVICE" &&
-        sgdisk -n "1:2048:+${BOOT_FILE_SIZE}K" -t '1:ef00' "$DEVICE" &&
+        sgdisk -n "1:2048:+${BOOT_FILE_SIZE}K" -t '1:0700' "$DEVICE" &&
 
         sgdisk -n "2:0:+${INST_FILE_SIZE}K" -t '2:0700' "$DEVICE" # Microsoft Basic Data
     ) || {
