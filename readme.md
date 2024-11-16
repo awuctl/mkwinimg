@@ -12,7 +12,7 @@ You need the following stuff:
 
  * zsh
  * 7-Zip / p7zip (for `7z`)
- * gdisk / gptfdisk (for `fdisk`)
+ * fdisk / gptfdisk (for `sgfdisk`)
  * dosfstools (for `mkfs.vfat`)
  * ntfs-3g (for `mkfs.ntfs`)
  * gawk (for `awk`)
